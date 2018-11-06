@@ -1,0 +1,4 @@
+huh:
+    list:
+        config_element_types:
+            - { name: tiny_slider, class: HeimrichHannot\TinySliderListBundle\ConfigElementType\TinySliderConfigElementType }

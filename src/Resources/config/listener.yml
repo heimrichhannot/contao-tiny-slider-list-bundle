@@ -1,0 +1,7 @@
+services:
+  HeimrichHannot\TinySliderListBundle\EventListener\ListBeforeRenderListener:
+    tags:
+      - { name: kernel.event_listener, event: huh.list.event.list_before_render, method: onListBeforeRender }
+  HeimrichHannot\TinySliderListBundle\EventListener\ListCompileListener:
+      tags:
+        - { name: kernel.event_listener, event: huh.list.event.list_compile, method: onListCompileRender }
