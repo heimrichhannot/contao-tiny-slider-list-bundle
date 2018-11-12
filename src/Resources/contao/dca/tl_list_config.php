@@ -22,7 +22,7 @@ $fields = [
         'label'                   => &$GLOBALS['TL_LANG']['tl_list_config']['addTinySlider'],
         'exclude'                 => true,
         'inputType'               => 'checkbox',
-        'eval'                    => ['tl_class' => 'w50', 'submitOnChange' => true],
+        'eval'                    => ['tl_class' => 'w50 clr', 'submitOnChange' => true],
         'sql'                     => "char(1) NOT NULL default ''"
     ],
     'tinySliderConfig' => [
