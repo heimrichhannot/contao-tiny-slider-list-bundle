@@ -8,7 +8,7 @@
     "contao/core-bundle": "^4.4",
     "symfony/framework-bundle": "^3.4",
     "heimrichhannot/contao-list-bundle": "^1.0-beta",
-    "heimrichhannot/contao-tiny-slider-bundle": "dev-master"
+    "heimrichhannot/contao-tiny-slider-bundle": "^1.0"
   },
   "require-dev": {
     "contao/test-case": "^1.1",
