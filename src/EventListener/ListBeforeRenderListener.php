@@ -18,8 +18,8 @@ class ListBeforeRenderListener
 
         if ($listConfig->addTinySlider && null !== ($config = $tinyConfigModel->findByPk($listConfig->tinySliderConfig))) {
             $dataAttributes = $templateData['dataAttributes'] ?: '';
-            $dataAttributes .= System::getContainer()->get('huh.tiny_slider.util.config')->getAttributesFromModel($config);
-            $templateData['wrapperClass'] = System::getContainer()->get('huh.tiny_slider.util.config')->getCssClassFromModel($config);
+            $dataAttributes .= System::getContainer()->get('huh.tiny_slider.util.config')->getAttributes($config);
+            $templateData['wrapperClass'] = System::getContainer()->get('huh.tiny_slider.util.config')->getCssClass($config);
             $templateData['dataAttributes'] = $dataAttributes;
             $templateData['itemsClass'] = 'tiny-slider-container';
 

@@ -16,9 +16,9 @@ class ListCompileListener
         /** @var TinySliderConfigModel $tinyConfigModel */
         $tinyConfigModel = System::getContainer()->get('contao.framework')->getAdapter(TinySliderConfigModel::class);
 
-        if ($listConfig->addTinySlider && null !== ($config = $tinyConfigModel->findByPk($listConfig->slickConfig))) {
+        if ($listConfig->addTinySlider && null !== ($config = $tinyConfigModel->findByPk($listConfig->tinySliderConfig))) {
             $cssID = $module->cssID;
-            $cssID[1] = $cssID[1].($cssID[1] ? ' ' : '').System::getContainer()->get('huh.tiny_slider.util.config')->getCssClassFromModel($config);
+            $cssID[1] = $cssID[1].($cssID[1] ? ' ' : '').System::getContainer()->get('huh.tiny_slider.util.config')->getCssClass($config);
             $module->cssID = $cssID;
         }
     }

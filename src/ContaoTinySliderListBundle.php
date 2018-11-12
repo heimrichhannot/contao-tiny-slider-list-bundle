@@ -8,7 +8,6 @@
 
 namespace HeimrichHannot\TinySliderListBundle;
 
-use HeimrichHannot\SlickListBundle\DependencyInjection\SlickListExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class ContaoTinySliderListBundle extends Bundle

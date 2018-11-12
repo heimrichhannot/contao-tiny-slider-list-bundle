@@ -11,14 +11,14 @@ $dca['palettes'][\HeimrichHannot\TinySliderListBundle\Backend\ListConfigElement:
  * Fields
  */
 $fields = [
-    'slickConfig' => [
-        'label'      => &$GLOBALS['TL_LANG']['tl_list_config_element']['tinySliderConfig'],
-        'exclude'    => true,
-        'filter'     => true,
-        'inputType'  => 'select',
-        'foreignKey' => 'tl_tiny_slider_config.title',
-        'eval'       => ['tl_class' => 'w50', 'mandatory' => true, 'includeBlankOption' => true, 'submitOnChange' => true],
-        'sql'        => "int(10) unsigned NOT NULL default '0'"
+    'tinySliderConfig' => [
+        'label'            => &$GLOBALS['TL_LANG']['tl_list_config_element']['tinySliderConfig'],
+        'exclude'          => true,
+        'filter'           => true,
+        'inputType'        => 'select',
+        'options_callback' => ['huh.tiny_slider.backend.tiny_slider_spread', 'getBaseConfigurations'],
+        'eval'             => ['tl_class' => 'w50', 'mandatory' => true, 'includeBlankOption' => true, 'submitOnChange' => true],
+        'sql'              => "int(10) unsigned NOT NULL default '0'",
     ],
 ];
 
