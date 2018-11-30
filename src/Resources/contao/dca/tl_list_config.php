@@ -37,3 +37,5 @@ $fields = [
 ];
 
 $dca['fields'] += $fields;
+
+\HeimrichHannot\ListBundle\Backend\ListConfig::addOverridableFields();
